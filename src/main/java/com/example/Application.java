@@ -1,21 +1,20 @@
+// src/main/java/com/contaminacion/Application.java
 package com.example;
 
-import com.vaadin.flow.theme.aura.Aura;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.vaadin.flow.component.dependency.StyleSheet;
-import com.vaadin.flow.component.page.AppShellConfigurator;
-import com.vaadin.flow.component.page.Push;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
-@StyleSheet(Aura.STYLESHEET)
-@StyleSheet("styles.css") // Your custom styles
-@Push
-public class Application implements AppShellConfigurator {
-
+@EnableMongoRepositories(basePackages = "com.example.repository")
+public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+        System.out.println("============================================================");
+        System.out.println("🌍 SISTEMA DE GESTIÓN Y PREDICCIÓN DE CONTAMINACIÓN");
+        System.out.println("============================================================");
+        System.out.println("✅ Aplicación iniciada en: http://localhost:8080");
+        System.out.println("🔗 Conectado a MongoDB local: mongodb://localhost:27017");
+        System.out.println("============================================================");
     }
-
 }
