@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Centro Histórico",
+    "contaminantesActuales": {
+      "pm25": 35.2,
+      "no2": 42.1,
+      "so2": 18.5,
+      "co2": 850.0
+    },
+    "factoresClimaticos": {
+      "temperatura": 24.5,
+      "velocidadViento": 3.2,
+      "humedad": 65.0
+    },
+    "historico30Dias": [],
+    "prediccion": {
+      "fecha": "2026-06-25T08:00:00",
+      "pm25": 42.3,
+      "no2": 48.0,
+      "so2": 20.1,
+      "nivelAlerta": "AMARILLO",
+      "recomendaciones": ["Recomendar uso de transporte público", "Grupos de riesgo evitar esfuerzos prolongados"]
+    },
+    "ultimaActualizacion": "2026-06-24T15:30:00"
+  }
+]
